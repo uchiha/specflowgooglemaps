@@ -1,0 +1,6 @@
+APITest/bin*
+APITest/obj*
+APITest.Specs/bin*
+APITest.Specs/obj*
+*packages
+.vs*
