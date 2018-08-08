@@ -40,5 +40,15 @@ namespace APITest.Specs
             
         }
 
+        [AfterScenario]
+        public void ClearUsedResources()
+        {
+            RestUtils.RestClientUsed = null;
+            RestUtils.RestResponseGen = null;
+            RestUtils.RestRequestUsed = null;
+            Console.WriteLine(">>>> yes, we were executed!");
+            Console.WriteLine("> \"" + RestUtils.RestResponseGen + "\"");
+        }
+
     }
 }

@@ -15,6 +15,10 @@ namespace APITest.utilities
             {
                 return rClient;
             }
+            set
+            {
+                rClient = value;
+            }
         }
 
         public static RestRequest RestRequestUsed
@@ -23,6 +27,10 @@ namespace APITest.utilities
             {
                 return rReq;
             }
+            set
+            {
+                rReq = value;
+            }
         }
 
         public static IRestResponse RestResponseGen
@@ -30,6 +38,10 @@ namespace APITest.utilities
             get
             {
                 return rResp;
+            }
+            set
+            {
+                rResp = value;
             }
         }
 
